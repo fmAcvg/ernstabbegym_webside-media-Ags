@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Parent Template</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+
+</head>
+  <body>
+    <header>
+      <div class="container">
+        <strong><nav>
+          <ul class="menu">
+              <img src="{{url_for('static', filename='outline_menu_white_24dp.png')}}" id ="opensidebar"></img>
+            <h1 class="logo">Ernstabbegymasnium</h1>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+
+{% block content %}
+{% endblock %}
+
+ </body>
+</html>
