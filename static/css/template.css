@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@900&family=Source+Code+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
 
 html{
   background: white;
   display: grid;
+  width: 1920px;
+    overflow-x: hidden;
+    height:2000px ;
 }
 
 strong{
@@ -16,13 +19,14 @@ strong{
   top: 0px;
   left: 0px;
   z-index: 15;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 strong h1{
   position: absolute;
   color: white;
   font-size: 15px;
   letter-spacing: 10px;
-  top: 2px;
+  top: 9px;
   left: 810px;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -41,15 +45,77 @@ strong #opensidebar{
   left: 0px;
   width: 1920px;
   height: 1080px;
-  top: -300px;
-  z-index: 1;
+  top: -100px;
+  z-index: 0;
 }
-#background-field1{
-  position: absolute;
-  left:0px;
-  z-index: 3;
-  top: 800px;
-  height: 500px;
-  color: white;
-  width: 1920px;
+#background-field1 {
+    position: absolute;
+    left: -25px;
+    z-index: 3;
+    top: 600px;
+    height: 1000px;
+    color: white;
+    width: 1931px;
+}
+
+#background-field2 {
+    position: absolute;
+    left: -25px;
+    z-index: 3;
+    top: 1500px;
+    height: 800px;
+    color: white;
+    width: 1931px;
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+
+
+.container {
+    padding: 2px 16px;
+}
+.cropped {
+width: 383px;
+height: 180px;
+overflow: hidden;
+border: 5px solid black;
+}
+#Ag{
+    position: absolute;
+    top: 830px;
+    width: 1920px;
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+
+#AbbeTV_card1{
+    position: absolute;
+    top: 1100px;
+    left: 200px;
+}
+
+#Schülerzeitung_card2{
+    position: absolute;
+    top: 1100px;
+    left: 800px;
+}
+
+#HomepageAG_card3{
+    position: absolute;
+    top: 1100px;
+    left: 1400px;
+}
+
+#HomepageAG_card3_1{
+    position: absolute;
+    top: 1300px;
+    left: 3000px;
+}
+.AgsÜberschrift{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    left: 180px;
+    top: 40px;
+    font-size: 40px;
+    font-weight: lighter;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
