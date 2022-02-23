@@ -178,7 +178,7 @@ border: 5px solid black;
 }
 
 
-.navbar{
+.navbar {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -191,6 +191,24 @@ border: 5px solid black;
     height: 0px;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    transition-duration: 1s;
 }
-
+.hidden_nav{
+    transition-duration: 2s;
+}
+.nav{
+    display: none;
+    transform: rotate(90deg);
+    transition-duration: 10s;
+}
+.img_abbe_head {
+    width: 22px;
+    height: 25px;
+    position: absolute;
+    left: 6px;
+    top: 11px;
+    transform: rotate(
+180deg
+);
+    transform: scaleX(-1);
+}
