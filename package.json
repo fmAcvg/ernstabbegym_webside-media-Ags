@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "sass": "^1.49.8"
+  },
+  "dependencies": {
+    "@terwanerik/scrolltrigger": "^1.0.5"
   }
 }

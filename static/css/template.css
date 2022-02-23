@@ -1,14 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@900&family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+{
+scroll-behavior: smooth;
+}
 html{
   background: white;
   display: grid;
   width: 1920px;
     overflow-x: hidden;
-    height:2000px ;
 }
 
 strong{
@@ -46,6 +47,7 @@ strong #opensidebar{
   width: 1920px;
   height: 1080px;
   top: -100px;
+    filter: blur("100");
   z-index: 0;
 }
 #background-field1 {
@@ -82,7 +84,7 @@ border: 5px solid black;
 #Ag{
     position: absolute;
     top: 830px;
-    width: 1920px;
+    width: 1980px;
     box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%);
 }
 
@@ -119,3 +121,76 @@ border: 5px solid black;
     font-weight: lighter;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ags{
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%)
+}
+
+.ags:hover{
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 80%);
+}
+.typewriter {
+    left: 650px;
+    position: absolute;
+    top: -205px;
+}
+.typewriter h5 {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-family: "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-feature-settings: "ss02" on,"ss01" on;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0px }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #bcf1eb; }
+}
+
+
+.navbar{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 1920px;
+    -ms-flex-align: center;
+    left: -409px;
+    top: 0px;
+    height: 0px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+

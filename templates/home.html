@@ -2,6 +2,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <html lang="en" dir="ltr">
   <head>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <meta charset="utf-8">
     <title>Home -- media_ernstabbe</title>
   </head>
@@ -9,21 +13,23 @@
     {% extends "template.html" %}
     {% block content %}
         <div id="background-field1">
-        <div id="AGs"></div>
-            </div>
-            </div>
-            <img src="{{url_for('static', filename='abbe_main.jpeg')}}" id="banner"></img>
+        <div class="typewriter">
+              <h5>ABBE-MEDIA-AGS</h5>
+        </div>
+        </div>
+
+            </img>
         <div id="Ag">
                 <div class="card text-center" style="left: -5px">
                     <div class="card-body">
                         <h5 class="card-title">Arbeitsgemeinschaften Bereich Medien</h5>
                         <p class="card-text">Unsere Schule bietet mehrere Medien AGs(Arbeitsgemeinschaften) an. In denen wir versuchen, den kindern den umgang mit modernen medien zu lernen</p>
-                        <a href="#" class="btn btn-primary">Erfahre mehr</a>
+                        <a href="#link" class="btn btn-primary">Erfahre mehr</a>
                     </div>
                 </div>
    </div>
         <div id="AbbeTV_card1">
-        <div class="card" style="width: 300px; border-radius: 20px;">
+        <div class="card reveal ags" style="width: 300px; border-radius: 20px;">
             <div class="card-body">
                 <h5 class="card-title">Abbe-TV</h5>
                 <p class="card-text">Erstellung und Gestaltung von modernen Videobeiträgen über die Schule (z.B. Imagefilm, Fächervorstellung, Schulevents,) außerdem
@@ -32,29 +38,27 @@ Vielfältige Aufgaben: Videobearbeitung, Design, Sound, Regie, Technik,…</p>
             <ul class="list-group list-group-flush">
             </ul>
             <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link btn btn-primary">mehr erfahren</a>
             </div>
         </div>
         </div>
 
         <div id="Schülerzeitung_card2">
-        <div class="card" style="width: 300px; border-radius: 20px;">
+        <div class="card reveal ags" style="width: 300px; border-radius: 20px;">
             <div class="card-body">
-                <h5 class="card-title">Schülerzeitung</h5>
+                <h5 class="card-title" id="link">Schülerzeitung</h5>
                 <p class="card-text">Die schülerzeitung, iust ein Ort, wo man Freunde finden kann, und seine journalistischen Fähigkeiten verbessern kann</p>
             </div>
             <ul class="list-group list-group-flush">
             </ul>
             <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link btn btn-primary">mehr erfahren</a>
             </div>
         </div>
         </div>
 
         <div id="HomepageAG_card3">
-        <div class="card" style="width: 300px; border-radius: 20px;">
+        <div class="card reveal ags" style="width: 300px; border-radius: 20px;">
             <div class="card-body">
                 <h5 class="card-title">Homepage AG</h5>
                 <p class="card-text">einstellen neuer Beiträge auf der Schulhomepage, Gestaltung der Beiträge mit beigefügten Fotos,
@@ -63,18 +67,14 @@ Strukturierung und Erweiterung der Schulhomepage, wenn du dich für so etwas int
             <ul class="list-group list-group-flush">
             </ul>
             <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link btn btn-primary">mehr erfahren</a>
             </div>
         </div>
 
-        <div id="HomepageAG_card3_1">
-        <div class="card" style="width: 300px; border-radius: 20px;">
-            <div class="card-body">
-                <h5 class="card-title">Filmen</h5>
-            </div>
-            </div>
+        </div>
         </div>
     {% endblock %}
   </body>
+
+
 </html>
