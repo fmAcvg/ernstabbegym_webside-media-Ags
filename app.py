@@ -8,10 +8,15 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/schülerzeitung")
+def schülerzeitung():
+    return render_template("schülerzeitung.html")
 
+
+
+@app.route("/impressum")
+def impressum():
+    return render_template("impressum.html")
 
 
 if __name__ == "__main__":
