@@ -28,6 +28,7 @@ strong h1{
   font-size: 15px;
   letter-spacing: 10px;
   top: 9px;
+    z-index: 50;
   left: 810px;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -188,6 +189,7 @@ border: 5px solid black;
     -ms-flex-align: center;
     left: -409px;
     top: 0px;
+    z-index:2;
     height: 0px;
     -ms-flex-pack: justify;
     justify-content: space-between;

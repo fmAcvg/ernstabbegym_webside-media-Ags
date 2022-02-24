@@ -12,6 +12,7 @@
   <body>
     {% extends "template.html" %}
     {% block content %}
+        <img src="{{url_for('static', filename='abbe_main.jpeg')}}" id="banner" style="z-index: 1" top="-300px">
         <div id="background-field1">
         <div class="typewriter">
               <h5>ABBE-MEDIA-AGS</h5>
@@ -20,7 +21,7 @@
 
             </img>
         <div id="Ag">
-                <div class="card text-center" style="left: -5px">
+                <div class="card text-center" style="z-index: 10">
                     <div class="card-body">
                         <h5 class="card-title">Arbeitsgemeinschaften Bereich Medien</h5>
                         <p class="card-text">Unsere Schule bietet mehrere Medien AGs(Arbeitsgemeinschaften) an. In denen wir versuchen, den kindern den umgang mit modernen medien zu lernen</p>

@@ -7,7 +7,10 @@
   <body>
     {% extends "template.html" %}
     {% block content %}
+        <img src="{{url_for('static', filename='abbe_main.jpeg')}}" id="banner"  >
+        <div id="background-field1" style="z-index: 1; background: white;">
 
+        </div>
     {% endblock %}
   </body>
 </html>

@@ -14,9 +14,6 @@ def schülerzeitung():
 
 
 
-@app.route("/impressum")
-def impressum():
-    return render_template("impressum.html")
 
 
 if __name__ == "__main__":

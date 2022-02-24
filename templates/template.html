@@ -21,10 +21,11 @@
           <ul class="menu">
               <img src="{{url_for('static', filename='outline_menu_white_24dp.png')}}" id ="opensidebar" class="hidden_nav" onclick="opennav()"></img>
               <img src="{{url_for('static', filename='outline_menu_white_24dp.png')}}" id ="opensidebar" class="nav" onclick="closenav()"></img>
-            <h1 class="logo">Ernst-Abbe-Gymasnium</h1>
+              <a href="https://ernstabbegymnasium.de/">
+            <h1 class="logo" href="">Ernst-Abbe-Gymasnium</h1>
+              </a>
           </ul>
         </nav></strong>
-           <img src="{{url_for('static', filename='abbe_main.jpeg')}}" id="banner">
                 <div id="side_bar"></div>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                           <div class="container-fluid">
@@ -53,15 +54,12 @@
                                 </li>
                                   <li class="nav-item">
                                   <a class="nav-link" href="#">Homepage AG</a>
-                                </li>
-                                  <li class="nav-item">
-                                  <a class="nav-link" href="#">Impressum</a>
-                                </li>
                               </ul>
                             </div>
                           </div>
                         </nav>
       </div>
+        <h3><i class="icon-arrow-down" href="#opensidebar"></i></h3>
     </header>
 
 {% block content %}
