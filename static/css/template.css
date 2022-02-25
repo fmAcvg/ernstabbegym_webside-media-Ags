@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 {
 scroll-behavior: smooth;
+width:100% ;
 }
-html{
+html {
   background: white;
     scroll-behavior: smooth;
-  display: grid;
-  width: 1920px;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -223,4 +223,45 @@ border: 5px solid black;
     width: 50px;
     height: 50px;
     left: 1875px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menurespond {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menurespond a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menurespond, .main, .right {
+    width: 100%;
+  }
 }
